@@ -1,0 +1,118 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.StemListing {
+  flex-basis: 100%;
+  padding: $spacing-half;
+
+  h2 {
+    margin: 0 0 $spacing-half;
+  }
+
+  a {
+    @include panel-1();
+
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  &--details {
+    flex-grow: 1;
+    padding: $spacing;
+  }
+
+  &--licence {
+    position: absolute;
+    bottom: $spacing;
+    right: $spacing;
+    font-size: 14px;
+  }
+
+  &--thumbnail {
+    display: none;
+  }
+
+  &--image {
+    @include square-image();
+  }
+
+  &--downloadIcon {
+    @include panel-1();
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 64px;
+    transform: translate3d(100%, 0, 0);
+    transition: transform 200ms ease-out;
+  }
+
+  a:hover &--downloadIcon {
+    transform: translate3d(0, 0, 0);
+  }
+
+  @include screen-above(340px) {
+    &--thumbnail {
+      display: block;
+      position: relative;
+      flex-grow: 0;
+      flex-basis: 36%;
+      overflow: hidden;
+    }
+  }
+
+  @include screen-above(480px) {
+    &--thumbnail {
+      flex-basis: 25%;
+    }
+  }
+
+  @include screen-above(622px) {
+    flex-basis: 50%;
+
+    &-thumbnail {
+      flex-basis: 38%;
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    flex-basis: 100%;
+
+    &-thumbnail {
+      flex-basis: 20%;
+    }
+  }
+
+  @include screen-above(850px) {
+    flex-basis: 50%;
+
+    &-thumbnail {
+      flex-basis: 38%;
+    }
+  }
+
+  @include screen-above(1048px) {
+    &-thumbnail {
+      flex-basis: 33.333333%;
+    }
+  }
+
+  @include screen-above(1330px) {
+    flex-basis: 33.333333%;
+
+    &-thumbnail {
+      flex-basis: 38%;
+    }
+  }
+
+  @include screen-above(1784px) {
+    &-thumbnail {
+      flex-basis: 25%;
+    }
+  }
+}

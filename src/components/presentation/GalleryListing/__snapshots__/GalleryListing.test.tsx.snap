@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <GalleryListing /> when imageUrl is defined matches snapshot 1`] = `
+<article
+  class="GalleryListing isRendered"
+>
+  <a
+    href="/galleries/test-1"
+  >
+    <header
+      class="GalleryListing--header"
+    >
+      <h2>
+        Title
+      </h2>
+    </header>
+    <figure
+      class="Image GalleryListing--image isLoading"
+    >
+      <div
+        class="Image--wrapper"
+      >
+        <img
+          alt="Title"
+          src="Image URL"
+        />
+        <span
+          class="Loader"
+        >
+          <div
+            class="Loader--animation"
+          >
+            <span />
+            <span />
+            <span />
+          </div>
+        </span>
+      </div>
+    </figure>
+  </a>
+</article>
+`;

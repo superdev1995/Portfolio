@@ -1,0 +1,120 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Home {
+  margin: (-$spacing-half);
+  padding-bottom: $spacing-half;
+
+  h2 {
+    @include line-before-after();
+
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  > section {
+    padding: $spacing-half;
+  }
+
+  &--news {
+    h2 {
+      @include hide-visually();
+    }
+  }
+
+  &--appearances,
+  &--bio,
+  &--connect {
+    > div {
+      @include panel-1();
+
+      min-height: 100%;
+      padding: $spacing;
+    }
+  }
+
+  &--appearances--items {
+    margin: (-$spacing-half);
+  }
+
+  &--connect {
+    &--content {
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        flex-basis: 100%;
+        flex-grow: 1;
+      }
+
+      h2 {
+        align-self: flex-start;
+      }
+    }
+
+    &--websites {
+      display: flex;
+      flex-wrap: wrap;
+      align-self: center;
+      margin: (-$spacing-half);
+      padding: $spacing-half;
+    }
+
+    &--press {
+      align-self: flex-end;
+      text-align: center;
+    }
+  }
+
+  @include screen-below($screen-xxs-max) {
+    &--connect--press {
+      font-size: 12px;
+    }
+  }
+
+  @include screen-above($screen-md-min) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--bio,
+    &--connect {
+      flex-basis: 50%;
+    }
+
+    &--news,
+    &--appearances {
+      flex-basis: 100%;
+    }
+  }
+
+  @include screen-above(1300px) {
+    .Home--appearances {
+      flex-basis: 30%;
+
+      &--content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &--items {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        .AppearanceListing {
+          display: flex;
+          flex-grow: 1;
+
+          a {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+
+    &.hasAppearancesSection {
+      .Home--news {
+        flex-basis: 70%;
+      }
+    }
+  }
+}

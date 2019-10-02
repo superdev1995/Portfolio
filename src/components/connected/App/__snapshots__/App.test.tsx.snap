@@ -1,0 +1,426 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[connected] <App /> when mounting on the client matches snapshot 1`] = `
+<article
+  class="Page"
+>
+  <header
+    class="Banner"
+    role="banner"
+  >
+    <a
+      class="Brand"
+      href="/"
+    >
+      <span>
+        My name is Viii: a painter of frequencies and thoughts
+      </span>
+      <svg />
+      <svg />
+    </a>
+    <nav
+      class="Navigation"
+      role="navigation"
+    >
+      <button
+        class="Button"
+        type="button"
+      >
+        <span
+          class="Button--content"
+        >
+          Menu
+        </span>
+      </button>
+      <ul>
+        <li
+          class=""
+        >
+          <a
+            href="/news"
+          >
+            News
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/releases"
+          >
+            Releases
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/appearances"
+          >
+            Appearances
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/galleries"
+          >
+            Galleries
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/stems"
+          >
+            Stems
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/resources"
+          >
+            Resources
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="Page--body"
+    role="main"
+  >
+    <article
+      class="ErrorPage"
+    >
+      <header
+        class="PageHeader"
+      >
+        <h1>
+          An error has occurred
+        </h1>
+      </header>
+      <div
+        class="ErrorPage--content"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+          />
+        </svg>
+        <p>
+          An error has occurred
+        </p>
+      </div>
+    </article>
+  </main>
+  <section
+    class="ToastContainer"
+  >
+    <div
+      class="Toast OnlineStatusToast isHidden"
+    >
+      <div
+        class="Toast--content"
+      >
+        <div
+          class="Toast--message"
+        >
+          You are offline. Some data and external links will be unavailable until you reconnect.
+        </div>
+        <button
+          class="Button Toast--closeButton"
+          title="Close"
+          type="button"
+        >
+          <span
+            class="Button--content"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="Toast NewVersionToast isHidden"
+    >
+      <div
+        class="Toast--content"
+      >
+        <div
+          class="Toast--message"
+        >
+          <p>
+            A new version of the site is available, refresh to see it.
+          </p>
+          <button
+            class="Button NewVersionToast--refreshButton isStyled"
+            type="button"
+          >
+            <span
+              class="Button--content"
+            >
+              Refresh
+            </span>
+          </button>
+        </div>
+        <button
+          class="Button Toast--closeButton"
+          title="Close"
+          type="button"
+        >
+          <span
+            class="Button--content"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+</article>
+`;
+
+exports[`[connected] <App /> when mounting on the server matches snapshot 1`] = `
+<article
+  class="Page"
+>
+  <header
+    class="Banner"
+    role="banner"
+  >
+    <a
+      class="Brand"
+      href="/"
+    >
+      <span>
+        My name is Viii: a painter of frequencies and thoughts
+      </span>
+      <svg />
+      <svg />
+    </a>
+    <nav
+      class="Navigation"
+      role="navigation"
+    >
+      <button
+        class="Button"
+        type="button"
+      >
+        <span
+          class="Button--content"
+        >
+          Menu
+        </span>
+      </button>
+      <ul>
+        <li
+          class=""
+        >
+          <a
+            href="/news"
+          >
+            News
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/releases"
+          >
+            Releases
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/appearances"
+          >
+            Appearances
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/galleries"
+          >
+            Galleries
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/stems"
+          >
+            Stems
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/resources"
+          >
+            Resources
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="Page--body"
+    role="main"
+  >
+    <div
+      class="MockPageComponent"
+    />
+  </main>
+  <section
+    class="ToastContainer"
+  />
+</article>
+`;
+
+exports[`[connected] <App /> when mounting when the page has no getInitialProps method matches snapshot 1`] = `
+<article
+  class="Page"
+>
+  <header
+    class="Banner"
+    role="banner"
+  >
+    <a
+      class="Brand"
+      href="/"
+    >
+      <span>
+        My name is Viii: a painter of frequencies and thoughts
+      </span>
+      <svg />
+      <svg />
+    </a>
+    <nav
+      class="Navigation"
+      role="navigation"
+    >
+      <button
+        class="Button"
+        type="button"
+      >
+        <span
+          class="Button--content"
+        >
+          Menu
+        </span>
+      </button>
+      <ul>
+        <li
+          class=""
+        >
+          <a
+            href="/news"
+          >
+            News
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/releases"
+          >
+            Releases
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/appearances"
+          >
+            Appearances
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/galleries"
+          >
+            Galleries
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/stems"
+          >
+            Stems
+          </a>
+        </li>
+        <li
+          class=""
+        >
+          <a
+            href="/resources"
+          >
+            Resources
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main
+    class="Page--body"
+    role="main"
+  >
+    <div
+      class="MockPageComponent"
+    />
+  </main>
+  <section
+    class="ToastContainer"
+  />
+</article>
+`;

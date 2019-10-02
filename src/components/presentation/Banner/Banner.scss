@@ -1,0 +1,43 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Banner {
+  @include panel-1();
+
+  position: fixed;
+  z-index: 1;
+
+  @include screen-below($screen-xs-max) {
+    display: flex;
+    align-items: center;
+    top: $spacing;
+    right: $spacing-double;
+    left: 0;
+    padding: $spacing-half $spacing-half $spacing-half $spacing;
+
+    &::after {
+      @include panel-1();
+
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: $spacing;
+      content: "";
+      clip-path: polygon(0 0, 100% 0, 0 50%, 100% 100%, 0% 100%);
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    top: 0;
+    bottom: $spacing;
+    left: $spacing;
+    width: $banner-size-medium;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0% 100%);
+    overflow: hidden;
+  }
+
+  @include screen-above($screen-md-min) {
+    width: $banner-size;
+  }
+}

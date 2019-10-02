@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <ImageGallery /> when all props are defined and isLooped is true matches snapshot when the modal is closed 1`] = `
+<div
+  class="ImageGallery TestImageGallery"
+>
+  <div
+    class="Image"
+    id="image-1"
+  />
+  <div
+    class="Image"
+    id="image-2"
+  />
+  <div
+    class="Image"
+    id="image-3"
+  />
+</div>
+`;
+
+exports[`[presentation] <ImageGallery /> when all props are defined and isLooped is true matches snapshot when the modal is open 1`] = `
+Array [
+  <div
+    class="ImageGallery TestImageGallery"
+  >
+    <div
+      class="Image"
+      id="image-1"
+    />
+    <div
+      class="Image"
+      id="image-2"
+    />
+    <div
+      class="Image"
+      id="image-3"
+    />
+  </div>,
+  <div
+    class="Portal--inPlace"
+  >
+    <div
+      aria-hidden="false"
+      aria-modal="true"
+      class="Modal ImageGallery--modal isVisible"
+      role="dialog"
+      tabindex="0"
+    >
+      <div
+        class="Modal--overlay"
+      />
+      <div
+        class="Modal--content"
+      >
+        <div
+          class="Modal--body"
+        >
+          <div
+            class="ImageGallery--modal--item"
+          >
+            <div
+              class="Image"
+              id="image-1"
+            />
+          </div>
+          <div
+            class="ImageGallery--modal--controls"
+          >
+            <button
+              class="Button ImageGallery--modal--previousButton"
+              type="button"
+            >
+              <span
+                class="Button--content"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <button
+              class="Button ImageGallery--modal--nextButton"
+              type="button"
+            >
+              <span
+                class="Button--content"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <button
+          class="Button Modal--closeButton"
+          type="button"
+        >
+          <span
+            class="Button--content"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;

@@ -1,0 +1,83 @@
+{
+  "Items": [
+    {
+      "Title": "Lovedecay",
+      "Size": "265MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/lovedecay-lovesong.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "lovedecay",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/in6bhlsk0fpumg3/Lovedecay.rar?dl=0",
+      "CreatedAt": "2017-03-24T00:00:00"
+    },
+    {
+      "Title": "Lovesong",
+      "Size": "273MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/lovedecay-lovesong.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "lovesong",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/2ta77bwo3g4qvnq/Lovesong.rar?dl=0",
+      "CreatedAt": "2017-03-24T00:00:00"
+    },
+    {
+      "Title": "Heavens to Elizabeth",
+      "Size": "298MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/heavens-to-elizabeth.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "heavens-to-elizabeth",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/1gwlh2i9r8pucn8/Heavens%20to%20Elizabeth.rar?dl=0",
+      "CreatedAt": "2017-05-16T00:00:00"
+    },
+    {
+      "Title": "Witchlust",
+      "Size": "307MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/witchlust-rev-22-20.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "witchlust",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/1ii71shiimeukhz/Witchlust.rar?dl=0",
+      "CreatedAt": "2017-06-02T00:00:00"
+    },
+    {
+      "Title": "Rev 22:20",
+      "Size": "410MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/witchlust-rev-22-20.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "rev-22-20",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/5sfzowpuqwwc68v/Rev%2022-20.rar?dl=0",
+      "CreatedAt": "2017-06-02T00:00:00"
+    },
+    {
+      "Title": "Threadfear",
+      "Size": "383MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/threadfear-ask-me-to-stay.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "threadfear",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/qzf7a8ps2mrbflc/Threadfear.rar?dl=0",
+      "CreatedAt": "2017-11-03T00:00:00"
+    },
+    {
+      "Title": "Ask Me to Stay",
+      "Size": "388MB",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/releases/threadfear-ask-me-to-stay.jpg",
+      "PackageFormat": "RAR",
+      "Slug": "ask-me-to-stay",
+      "IsActive": "y",
+      "AudioFormat": "WAV, 16bit, 44.1kHz",
+      "Url": "https://www.dropbox.com/s/9s903nglecdb707/Ask%20Me%20To%20Stay.rar?dl=0",
+      "CreatedAt": "2017-11-03T00:01:00"
+    }
+  ],
+  "Count": 7,
+  "ScannedCount": 7
+}

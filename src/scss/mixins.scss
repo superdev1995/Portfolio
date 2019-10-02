@@ -1,0 +1,168 @@
+@import "./variables";
+
+@mixin hide-visually {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@mixin bg-2 {
+  background: $bg-2;
+  background-size: contain;
+  animation: pan-left infinite 90s ease-in-out;
+}
+
+@mixin bg-1 {
+  background: $bg-1;
+  background-size: cover;
+}
+
+@mixin panel-1 {
+  background: $panel-1-bg;
+  color: $panel-1-text;
+}
+
+@mixin panel-2 {
+  background: $panel-2-bg;
+  color: $panel-2-text;
+}
+
+@mixin logo-name {
+  clip-path: url("#logo-name-clip");
+}
+
+@mixin logo-symbol {
+  clip-path: url("#logo-symbol-clip");
+}
+
+@mixin square-image {
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Image--wrapper {
+    position: relative;
+    padding-top: 100%;
+  }
+
+  &.isLoading .Image--wrapper {
+    padding-top: 0;
+  }
+
+  .Loader {
+    padding-top: 100%;
+  }
+}
+
+@mixin angle-after-top {
+  display: block;
+  position: absolute;
+  top: -0.5px;
+  bottom: -0.5px;
+  left: 100%;
+  content: "";
+  transform: translate3d(-0.6px, 0, 0);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+@mixin angle-after-bottom {
+  display: block;
+  position: absolute;
+  top: -0.5px;
+  bottom: -0.5px;
+  left: 100%;
+  content: "";
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+@mixin angle-before {
+  display: block;
+  position: absolute;
+  top: -0.5px;
+  bottom: -0.5px;
+  right: 100%;
+  content: "";
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+@mixin flag-left {
+  padding-left: $spacing-double;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, $spacing 50%);
+}
+
+@mixin screen-below($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin screen-between($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin screen-above($min) {
+  @media screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin line-before-after() {
+  display: flex;
+  align-items: center;
+
+  &::before,
+  &::after {
+    height: 1px;
+    content: "";
+    background: $text-color;
+  }
+
+  &::before {
+    width: $spacing;
+    margin-right: $spacing-half;
+  }
+
+  &::after {
+    flex-grow: 1;
+    margin-left: $spacing-half;
+  }
+}
+
+@mixin text-shadow($color: $body-color, $size: 3px) {
+  text-shadow:
+    $color 0 0 $size,
+    $color 0 0 $size,
+    $color 0 0 $size,
+    $color 0 0 $size;
+}
+
+@mixin fade-up-on-render($opacity: 1) {
+  .isClientRendered & {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transform: translate3d(0, 10%, 0);
+    transition: opacity 400ms ease-out, transform 400ms ease-out;
+
+    &.isRendered {
+      position: static;
+      width: auto;
+      height: auto;
+      opacity: $opacity;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

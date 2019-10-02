@@ -1,0 +1,23 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &--content {
+    @include panel-1();
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 $spacing;
+  }
+
+  svg {
+    font-size: 128px;
+  }
+}

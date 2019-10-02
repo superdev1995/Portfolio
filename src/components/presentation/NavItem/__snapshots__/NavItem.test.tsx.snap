@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[connected] <NavItem /> when isSelected is false matches snapshot 1`] = `
+<li
+  class=""
+>
+  <a
+    href="/"
+    intl="[object Object]"
+  >
+    Nav item
+  </a>
+</li>
+`;
+
+exports[`[connected] <NavItem /> when isSelected is true matches snapshot 1`] = `
+<li
+  class="isSelected"
+>
+  Nav item
+</li>
+`;

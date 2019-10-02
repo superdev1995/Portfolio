@@ -1,0 +1,22 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.MetaBar {
+  @include panel-1();
+
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.5;
+  margin-bottom: $spacing;
+  padding: $spacing-half;
+
+  > * {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 $spacing-half;
+
+    > span {
+      padding-left: ($spacing / 3);
+    }
+  }
+}

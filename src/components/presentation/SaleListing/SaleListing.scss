@@ -1,0 +1,34 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.SaleListing {
+  padding: $spacing-half;
+
+  h3 {
+    margin: 0;
+  }
+
+  > * {
+    display: flex;
+    align-items: center;
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+  }
+
+  &--details {
+    padding: 0 $spacing-half;
+  }
+
+  &--price {
+    font-size: 32px;
+  }
+
+  @include screen-above(1400px) {
+    &--icon {
+      font-size: 64px;
+    }
+  }
+}

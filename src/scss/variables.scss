@@ -1,0 +1,35 @@
+$aws-url: "https://s3.amazonaws.com/mynameisviii-static";
+
+$body-color: #210813;
+$text-color: #ffe6eb;
+$link-color: #fff;
+$link-color-hover: darken($text-color, 10%);
+$link-decoration: none;
+$panel-base-color: #0f0007;
+$panel-1-bg: rgba($panel-base-color, 0.7);
+$panel-1-text: $text-color;
+$panel-2-bg: rgba($panel-base-color, 0.4);
+$panel-2-text: $text-color;
+
+$bg-1: $body-color url("#{$aws-url}/theme/heart-dark/bg-dark.jpg") 0 0 fixed no-repeat;
+$bg-2: $text-color url("#{$aws-url}/theme/heart/sky-day.jpg") 0 0 fixed no-repeat;
+
+$spacing: 20px;
+$spacing-half: ($spacing / 2);
+$spacing-double: ($spacing * 2);
+$radius: 3px;
+
+$modal-index: 10;
+
+$banner-size: 250px;
+$banner-size-small: 68px;
+$banner-size-medium: 174px;
+
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xxs-max: $screen-xs-min - 1;
+$screen-xs-max: $screen-sm-min - 1;
+$screen-sm-max: $screen-md-min - 1;
+$screen-md-max: $screen-lg-min - 1;

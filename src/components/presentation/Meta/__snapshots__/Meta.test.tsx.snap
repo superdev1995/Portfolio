@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <Meta /> when label is defined matches snapshot 1`] = `
+<div
+  class="Meta TestMeta"
+>
+   
+  <span
+    class="Meta--label"
+  >
+    Label:
+  </span>
+   
+  <span
+    class="Meta--value"
+  >
+    Value
+  </span>
+</div>
+`;
+
+exports[`[presentation] <Meta /> when labelIntlId is defined matches snapshot 1`] = `
+<div
+  class="Meta TestMeta"
+>
+   
+  <span
+    class="Meta--label"
+  >
+    Released:
+  </span>
+   
+  <span
+    class="Meta--value"
+  >
+    Value
+  </span>
+</div>
+`;
+
+exports[`[presentation] <Meta /> when neither label or labelIntlId are defined matches snapshot 1`] = `
+<div
+  class="Meta TestMeta"
+>
+    
+  <span
+    class="Meta--value"
+  >
+    Value
+  </span>
+</div>
+`;

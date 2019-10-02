@@ -1,0 +1,81 @@
+{
+  "Description": "A self-shot photography series, captured in a dark space.",
+  "Images": [
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/01.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/02.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/03.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/04.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/05.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/06.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/07.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/08.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/09.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/10.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/11.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/12.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/13.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/14.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/15.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/16.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/17.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    },
+    {
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/18.jpg",
+      "ModifiedAt": "2018-09-14T02:25:27.000Z"
+    }
+  ],
+  "IsTruncated": false,
+  "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/04.jpg",
+  "Slug": "dark-spaces-i",
+  "Title": "Dark Spaces I"
+}

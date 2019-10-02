@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[routes] <SymbolRoute /> renders correctly 1`] = `
+<article
+  class="SymbolRoute"
+>
+  <header
+    class="PageHeader"
+  >
+    <h1>
+      The Viii Symbol
+    </h1>
+  </header>
+  <section
+    class="SymbolRoute--meaning"
+  >
+    <p>
+      It appears you have discovered a Viii symbol out in the world – but what does it mean?
+    </p>
+    <div
+      class="SymbolRoute--symbol"
+    />
+    <p>
+      Aside from being an embodiment of the artist known as Viii (pronounced 'Vee'), it also represents the different sides of identity...
+    </p>
+    <p>
+      Each of the points of the triangle represent the start of a field of vision – three different perspectives of an individual:
+    </p>
+    <ul>
+      <li>
+        How they see themselves
+      </li>
+      <li>
+        How others see them
+      </li>
+      <li>
+        How they wish to be seen by others
+      </li>
+    </ul>
+    <p>
+      The open eye in the centre of the triangle represents the individual themselves, with them being fully self-aware and mindful of these perspectives.
+    </p>
+    <p>
+      The name 'Viii' also correlates to the meanings behind the symbol, with 'V' symbolising the viewpoint/triangle, with three of the letter 'i' representing each 'identity' perspective.
+    </p>
+  </section>
+  <section
+    class="SymbolRoute--about"
+  >
+    <h2>
+      Who is Viii?
+    </h2>
+    <figure
+      class="Image SymbolRoute-photo isLoading"
+    >
+      <div
+        class="Image--wrapper"
+      >
+        <img
+          alt="Viii"
+          src="https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/09.jpg"
+        />
+        <span
+          class="Loader"
+        >
+          <div
+            class="Loader--animation"
+          >
+            <span />
+            <span />
+            <span />
+          </div>
+        </span>
+      </div>
+    </figure>
+    <p>
+      Viii is a New Zealand-born singer, songwriter, instramentalist and record producer. This website serves as a means to release the different forms of creative information such as music releases, photoshoots, upcoming shows, design resources, and even song stems for other producers to use to create remixes.
+    </p>
+    <p>
+      Outside of the music, Viii also handles their own artistic direction and other aspects surrounding releases and performances, such as photography, graphic design, software development, makeup artistry and fashion.
+    </p>
+    <p>
+      Consider this discovery as an open invitation to explore the rest of this website and listen to the music that has been released to date.
+    </p>
+    <div
+      class="ButtonBar"
+    >
+      <a
+        class="Button"
+        href="/"
+      >
+        Explore the rest of the site
+      </a>
+    </div>
+  </section>
+</article>
+`;

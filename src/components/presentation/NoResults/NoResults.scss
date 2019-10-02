@@ -1,0 +1,7 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.NoResults {
+  @include panel-1();
+
+  padding: $spacing-half $spacing;
+}

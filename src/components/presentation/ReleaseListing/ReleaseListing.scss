@@ -1,0 +1,89 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.ReleaseListing {
+  flex-basis: 50%;
+
+  a {
+    display: block;
+    position: relative;
+    margin: $spacing-half;
+    overflow: hidden;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  &--image .Loader {
+    padding-top: 100%;
+  }
+
+  &--details {
+    @include panel-1();
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $spacing;
+    overflow: hidden;
+  }
+
+  &--header {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    text-align: center;
+    padding-bottom: $spacing;
+  }
+
+  &--meta {
+    flex-grow: 1;
+    font-size: 14px;
+  }
+
+  @include screen-below($screen-xs-max) {
+    &--details {
+      @include hide-visually();
+    }
+  }
+
+  @include screen-above($screen-xs-min) {
+    flex-basis: 33.333333%;
+
+    &--details {
+      transform: translate3d(0, 100%, 0);
+      transition: transform 200ms ease-out;
+    }
+
+    a:hover &--details {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    flex-basis: 50%;
+  }
+
+  @include screen-above(840px) {
+    flex-basis: 33.333333%;
+  }
+
+  @include screen-above(1100px) {
+    flex-basis: 25%;
+  }
+
+  @include screen-above(1320px) {
+    flex-basis: 20%;
+  }
+
+  @include screen-above(1400px) {
+    &--meta {
+      font-size: 16px;
+    }
+  }
+}

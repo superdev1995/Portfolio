@@ -1,0 +1,23 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/mynameisviii.com
+hooks:
+  ApplicationStop:
+    - location: scripts/ApplicationStop.sh
+      timeout: 300
+      runas: ec2-user
+  AfterInstall:
+    - location: scripts/AfterInstall.sh
+      timeout: 300
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/ApplicationStart.sh
+      timeout: 300
+      runas: ec2-user
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user

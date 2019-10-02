@@ -1,0 +1,50 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.ActListing {
+  padding: $spacing-half;
+
+  h3 {
+    margin: 0 0 $spacing-half;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  img {
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  &--details {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 85%;
+    align-content: center;
+    padding-left: $spacing-half;
+
+    > * {
+      flex-basis: 100%;
+    }
+  }
+
+  .Meta {
+    display: flex;
+  }
+
+  &--image {
+    flex-basis: 15%;
+  }
+
+  @include screen-above($screen-md-min) {
+    &--details {
+      flex-basis: 70%;
+    }
+
+    &--image {
+      flex-basis: 30%;
+    }
+  }
+}

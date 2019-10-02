@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[connected] <Navigation /> when interacting with the component matches snapshot 1`] = `
+<nav
+  class="Navigation isOpen"
+  role="navigation"
+>
+  <button
+    class="Button"
+    type="button"
+  >
+    <span
+      class="Button--content"
+    >
+      Menu
+    </span>
+  </button>
+  <ul>
+    <li
+      class=""
+    >
+      <a
+        href="/news"
+      >
+        News
+      </a>
+    </li>
+    <li
+      class=""
+    >
+      <a
+        href="/releases"
+      >
+        Releases
+      </a>
+    </li>
+    <li
+      class=""
+    >
+      <a
+        href="/appearances"
+      >
+        Appearances
+      </a>
+    </li>
+    <li
+      class=""
+    >
+      <a
+        href="/galleries"
+      >
+        Galleries
+      </a>
+    </li>
+    <li
+      class=""
+    >
+      <a
+        href="/stems"
+      >
+        Stems
+      </a>
+    </li>
+    <li
+      class=""
+    >
+      <a
+        href="/resources"
+      >
+        Resources
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

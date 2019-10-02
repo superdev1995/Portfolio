@@ -1,0 +1,72 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.WebsiteListing {
+  flex-basis: 50%;
+  padding: $spacing-half;
+
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  svg {
+    font-size: 42px;
+  }
+
+  &--title {
+    padding-left: $spacing-half;
+  }
+
+  @include screen-below($screen-xxs-max) {
+    svg {
+      margin: auto;
+    }
+
+    &--title {
+      @include hide-visually();
+    }
+  }
+
+  @include screen-above(350px) {
+    flex-basis: 33.333333%;
+  }
+
+  @include screen-above($screen-xs-min) {
+    flex-basis: 50%;
+  }
+
+  @include screen-above(590px) {
+    flex-basis: 33.333333%;
+  }
+
+  @include screen-above($screen-md-min) {
+    flex-basis: 100%;
+
+    a {
+      font-size: 20px;
+    }
+
+    svg {
+      font-size: 52px;
+    }
+  }
+
+  @include screen-above(1155px) {
+    flex-basis: 50%;
+  }
+
+  @include screen-above(1540px) {
+    flex-basis: 33.333333%;
+  }
+
+  @include screen-above(1750px) {
+    a {
+      font-size: 24px;
+    }
+
+    svg {
+      font-size: 64px;
+    }
+  }
+}

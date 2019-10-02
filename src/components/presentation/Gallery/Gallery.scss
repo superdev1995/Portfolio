@@ -1,0 +1,50 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Gallery {
+  &--description {
+    @include panel-1();
+
+    margin-bottom: $spacing;
+    padding: $spacing-half $spacing;
+  }
+
+  &--images {
+    padding-bottom: $spacing;
+  }
+
+  &--image {
+    flex-basis: 50%;
+    padding: $spacing-half;
+    cursor: pointer;
+  }
+
+  .ImageGallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin: -($spacing-half);
+  }
+
+  @include screen-above($screen-xs-min) {
+    &--image {
+      flex-basis: 33.333333%;
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    &-image {
+      flex-basis: 25%;
+    }
+  }
+
+  @include screen-above($screen-md-min) {
+    &--image {
+      flex-basis: 20%;
+    }
+  }
+
+  @include screen-above($screen-lg-min) {
+    &--image {
+      flex-basis: 16.666666%;
+    }
+  }
+}

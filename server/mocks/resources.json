@@ -1,0 +1,66 @@
+{
+  "Items": [
+    {
+      "Title": "Text logo (within circle device)",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/resources/viii-logo-text-in-circle.png",
+      "Slug": "viii-logo-text-in-circle",
+      "IsActive": "y",
+      "Description": "The Viii logo variant displaying the branded text within the painted circle device.",
+      "Type": "design",
+      "Url": "https://www.dropbox.com/s/vtht3hip5t6eegu/viii-logo-text-in-circle.svg?dl=0",
+      "CreatedAt": "2018-10-04T11:26:00"
+    },
+    {
+      "Title": "Symbol",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/resources/viii-symbol.png",
+      "Slug": "viii-symbol",
+      "IsActive": "y",
+      "Description": "The Viii symbol, depicting an eye within a triangle within a circle.",
+      "Type": "design",
+      "Url": "https://www.dropbox.com/s/1vbklerzh9yygit/viii-symbol.svg?dl=0",
+      "CreatedAt": "2018-10-04T11:30:00"
+    },
+    {
+      "Title": "Text logo (standalone)",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/resources/viii-logo-text.png",
+      "Slug": "viii-logo-text",
+      "IsActive": "y",
+      "Description": "The Viii logo variant displaying only the branded text.",
+      "Type": "design",
+      "Url": "https://www.dropbox.com/s/3q09a3r70nzv388/vii-logo-text.svg?dl=0",
+      "CreatedAt": "2018-10-04T11:40:00"
+    },
+    {
+      "Title": "Circle device",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/resources/viii-circle-device.png",
+      "Slug": "viii-circle-device",
+      "IsActive": "y",
+      "Description": "The painted circle device - most commonly used as part of the 'text within circle' logo variant.",
+      "Type": "design",
+      "Url": "https://www.dropbox.com/s/yixue32q96yel1y/viii-circle-device.svg?dl=0",
+      "CreatedAt": "2018-10-04T11:42:00"
+    },
+    {
+      "Title": "Sky (day)",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/resources/sky-day.jpg",
+      "Slug": "sky-day",
+      "IsActive": "y",
+      "Description": "Raster image of the daytime sky, often used in official Viii promotional material.",
+      "Type": "design",
+      "Url": "https://www.dropbox.com/s/c599ysb05jp0h2b/sky-day.jpg?dl=0",
+      "CreatedAt": "2018-10-04T11:46:00"
+    },
+    {
+      "Title": "Sky (night)",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/resources/sky-night.jpg",
+      "Slug": "sky-night",
+      "IsActive": "y",
+      "Description": "Raster image of the night sky, often used in official Viii promotional material.",
+      "Type": "design",
+      "Url": "https://www.dropbox.com/s/mpiagnepdq3nla6/sky-night.jpg?dl=0",
+      "CreatedAt": "2018-10-04T11:47:00"
+    }
+  ],
+  "Count": 6,
+  "ScannedCount": 6
+}

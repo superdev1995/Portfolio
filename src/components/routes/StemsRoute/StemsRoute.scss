@@ -1,0 +1,11 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.StemsRoute {
+  padding-bottom: $spacing;
+
+  &--listings {
+    display: flex;
+    flex-flow: row wrap;
+    margin: (-$spacing-half);
+  }
+}

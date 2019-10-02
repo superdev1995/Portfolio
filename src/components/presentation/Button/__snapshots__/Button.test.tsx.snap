@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <Button /> when isLoading is true matches snapshot 1`] = `
+<button
+  class="Button isLoading isStyled"
+  type="button"
+>
+  <span
+    class="Button--content"
+  >
+    Button text
+  </span>
+  <span
+    class="Loader"
+  >
+    <div
+      class="Loader--animation"
+    >
+      <span />
+      <span />
+      <span />
+    </div>
+  </span>
+</button>
+`;
+
+exports[`[presentation] <Button /> when rendering with default props matches snapshot 1`] = `
+<button
+  class="Button isStyled"
+  type="button"
+>
+  <span
+    class="Button--content"
+  >
+    Button text
+  </span>
+</button>
+`;

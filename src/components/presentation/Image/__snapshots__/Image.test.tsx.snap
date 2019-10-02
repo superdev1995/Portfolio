@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <Image /> when all props are defined matches snapshot 1`] = `
+<figure
+  class="Image Classname isRendered"
+  intl="[object Object]"
+  role="button"
+  tabindex="0"
+>
+  <div
+    class="Image--wrapper"
+  >
+    <img
+      alt="Alt"
+      src="Image URL"
+      title="Title"
+    />
+  </div>
+  <figcaption>
+    Caption
+  </figcaption>
+</figure>
+`;

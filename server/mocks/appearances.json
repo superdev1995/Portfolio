@@ -1,0 +1,259 @@
+{
+  "Items": [
+    {
+      "Audience": "18+",
+      "Description": "This is nothing but a test gig. It's not a real event or anything, so don't come.",
+      "FinishingAt": "2018-10-21T01:00:00",
+      "Images": [
+        {
+          "ImageUrl": "https://scontent-syd2-1.cdninstagram.com/vp/54127bb2824cd7fdc53b16529d2cbf66/5B9DCAA5/t51.2885-15/s640x640/sh0.08/e35/22071123_377597075993359_300443987536248832_n.jpg",
+          "Title": "Test"
+        },
+        {
+          "ImageUrl": "https://scontent-syd2-1.cdninstagram.com/vp/6948ffd2ec1841a230fd4a2951d9682b/5BB16229/t51.2885-15/s640x640/sh0.08/e35/22071185_120049202025917_3641908262988677120_n.jpg",
+          "Title": "Test 2"
+        },
+        {
+          "ImageUrl": "https://scontent-syd2-1.cdninstagram.com/vp/ca18e3e0d39573400c30b9f0fffac979/5B9E448A/t51.2885-15/s640x640/sh0.08/e35/21985087_1131650620300022_6079660459575738368_n.jpg",
+          "Title": "Test 3"
+        },
+        {
+          "ImageUrl": "https://scontent-syd2-1.cdninstagram.com/vp/3d5a511d89df625d3aedf6a39d62b734/5BA72356/t51.2885-15/e35/28429228_1781197762175359_1584060036995350528_n.jpg",
+          "Title": "Test 4"
+        }
+      ],
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/nothing-but-a-test-gig-2018-10-20.jpg",
+      "IsActive": "y",
+      "Location": {
+        "Address": "9 Edward Street, Te Aro, Wellington 6011",
+        "Name": "Meow",
+        "Type": "MusicVenue"
+      },
+      "OgImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/og/nothing-but-a-test-gig-2018-10-20.jpg",
+      "Organizer": {
+        "Logo": "https://s3.amazonaws.com/mynameisviii-static/voodoo-creation-records-logo.png",
+        "Name": "Voodoo Creation Records",
+        "Type": "Organization"
+      },
+      "Acts": [
+        {
+          "Name": "Viii",
+          "Type": "MusicGroup",
+          "Genre": "Goth/Electronic",
+          "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/viii-profile.jpg",
+          "Location": {
+            "Type": "City",
+            "Name": "Wellington"
+          },
+          "Url": "https://mynameisviii.com"
+        }
+      ],
+      "Sales": [
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Tickets",
+          "Price": 10,
+          "PriceCurrency": "NZD",
+          "Url": "http://ticketek.co.nz/",
+          "ValidFrom": "2018-05-24"
+        },
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Door sales",
+          "Price": 20,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-10-20T20:00:00"
+        }
+      ],
+      "Slug": "nothing-but-a-test-gig-2018-11-13",
+      "StartingAt": "2018-10-20T20:00:00",
+      "Status": "EventScheduled",
+      "Title": "Nothing But a Test Gig",
+      "Type": "MusicEvent"
+    },
+    {
+      "Audience": "18+",
+      "Description": "This is nothing but a test gig. It's not a real event or anything, so don't come.",
+      "FinishingAt": "2018-10-21T01:00:00",
+      "Images": [],
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/nothing-but-a-test-gig-2018-10-20.jpg",
+      "IsActive": "y",
+      "Location": {
+        "Address": "9 Edward Street, Te Aro, Wellington 6011",
+        "Name": "Meow",
+        "Type": "MusicVenue"
+      },
+      "OgImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/og/nothing-but-a-test-gig-2018-10-20.jpg",
+      "Organizer": {
+        "Logo": "https://s3.amazonaws.com/mynameisviii-static/voodoo-creation-records-logo.png",
+        "Name": "Voodoo Creation Records",
+        "Type": "Organization"
+      },
+      "Acts": [
+        {
+          "Name": "Viii",
+          "Type": "MusicGroup",
+          "Genre": "Goth/Electronic",
+          "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/viii-profile.jpg",
+          "Location": {
+            "Type": "City",
+            "Name": "Wellington"
+          },
+          "Url": "https://mynameisviii.com"
+        }
+      ],
+      "Sales": [
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Door sales",
+          "Price": 20,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-10-20T20:00:00"
+        }
+      ],
+      "Slug": "nothing-but-another-test-gig-2018-11-13",
+      "StartingAt": "2018-10-20T20:00:00",
+      "Status": "EventCancelled",
+      "Title": "Nothing But Another Test Gig",
+      "Type": "MusicEvent"
+    },
+    {
+      "Audience": "All ages",
+      "Description": "This is nothing but a test gig. It's not a real event or anything, so don't come.",
+      "FinishingAt": "2018-01-21T01:00:00",
+      "Images": [],
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/nothing-but-a-test-gig-2018-10-20.jpg",
+      "IsActive": "y",
+      "Location": {
+        "Address": "9 Edward Street, Te Aro, Wellington 6011",
+        "Name": "Meow",
+        "Type": "MusicVenue"
+      },
+      "OgImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/og/nothing-but-a-test-gig-2018-10-20.jpg",
+      "Organizer": {
+        "Logo": "https://s3.amazonaws.com/mynameisviii-static/voodoo-creation-records-logo.png",
+        "Name": "Voodoo Creation Records",
+        "Type": "Organization"
+      },
+      "Acts": [
+        {
+          "Name": "Viii",
+          "Type": "MusicGroup",
+          "Genre": "Goth/Electronic",
+          "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/viii-profile.jpg",
+          "Location": {
+            "Type": "City",
+            "Name": "Wellington"
+          },
+          "Url": "https://mynameisviii.com"
+        }
+      ],
+      "Sales": [
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Door sales",
+          "Price": 20,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-10-20T20:00:00"
+        },
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "GA tickets",
+          "Price": 10,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-10-20T20:00:00"
+        },
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Seated tickets, stalls",
+          "Price": 5,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-10-20T20:00:00"
+        },
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Seated tickets, gallery",
+          "Price": 5,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-10-20T20:00:00"
+        }
+      ],
+      "Slug": "nothing-but-yet-another-test-gig-2018-11-13",
+      "StartingAt": "2018-01-20T20:00:00",
+      "Status": "EventScheduled",
+      "Title": "Nothing But Yet Another Test Gig",
+      "Type": "MusicEvent"
+    },
+    {
+      "Acts": [
+        {
+          "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/acts/slow.jpg",
+          "Genre": "Goth Rock",
+          "Location": {
+            "Name": "Wellington",
+            "Type": "City"
+          },
+          "Name": "Slow",
+          "Type": "MusicGroup",
+          "Url": "https://www.facebook.com/eternallyslow"
+        },
+        {
+          "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/acts/keller-kinder.jpg",
+          "Genre": "Goth",
+          "Location": {
+            "Name": "Wellington",
+            "Type": "City"
+          },
+          "Name": "Keller Kinder",
+          "Type": "MusicGroup",
+          "Url": "https://kellerkinder.co.nz/"
+        },
+        {
+          "Genre": "Goth/Electronic",
+          "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/viii-profile.jpg",
+          "Location": {
+            "Name": "Wellington",
+            "Type": "City"
+          },
+          "Name": "Viii",
+          "Type": "MusicGroup",
+          "Url": "https://mynameisviii.com"
+        }
+      ],
+      "Audience": "18+",
+      "Description": "Wellington's premier goth music event, Shadowplay, is back for its summer installment! Viii will be making their live debut, alongside Slow and Keller Kinder at Vallhalla. This event will also mark the debut of the first lineup of Viii's band, The Anomalies.",
+      "FinishingAt": "2018-12-16T00:00:00",
+      "Images": [],
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/shadowplay-summer-2018.jpg",
+      "IsActive": "n",
+      "Location": {
+        "Address": "154 Vivian Street, Te Aro, Wellington 6011",
+        "Name": "Valhalla",
+        "Type": "MusicVenue"
+      },
+      "OgImageUrl": "https://s3.amazonaws.com/mynameisviii-static/appearances/shadowplay-summer-2018.jpg",
+      "Organizer": {
+        "Logo": "https://scontent.fakl3-1.fna.fbcdn.net/v/t1.0-9/11169875_459373687562362_5466933650123279468_n.jpg?_nc_cat=104&oh=705cac7b3e5c56dfa14c2abed5687f6c&oe=5C148A28",
+        "Name": "Shadowplay",
+        "Type": "Organization"
+      },
+      "RsvpUrl": "https://www.facebook.com/events/310691539519399",
+      "Sales": [
+        {
+          "Availability": "LimitedAvailability",
+          "Name": "Door sales",
+          "Price": 10,
+          "PriceCurrency": "NZD",
+          "ValidFrom": "2018-12-15T20:30:00"
+        }
+      ],
+      "Slug": "shadowplay-summer-2018",
+      "StartingAt": "2018-12-15T20:30:00",
+      "Status": "EventScheduled",
+      "Title": "Shadowplay Summer 2018",
+      "Type": "MusicEvent"
+    }
+  ],
+  "Count": 4,
+  "ScannedCount": 4
+}

@@ -1,0 +1,16 @@
+{
+  "IsTruncated": false,
+  "Items": [
+    {
+      "Description": "A self-shot photography series, captured in a dark space.",
+      "ImageUrl": "https://s3.amazonaws.com/mynameisviii-static/galleries/dark-spaces-i/04.jpg",
+      "ModifiedAt": "2018-09-14T02:22:30.000Z",
+      "Slug": "dark-spaces-i",
+      "Title": "Dark Spaces I"
+    },
+    {
+      "ModifiedAt": "2018-09-12T03:58:33.000Z",
+      "Slug": "test-gallery"
+    }
+  ]
+}

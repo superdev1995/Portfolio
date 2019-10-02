@@ -1,0 +1,6 @@
+coverage/*
+dist/*
+package-lock.json
+package.json
+yarn.lock
+README.md

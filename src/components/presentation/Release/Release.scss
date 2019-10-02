@@ -1,0 +1,206 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Release {
+  h2 {
+    @include line-before-after();
+  }
+
+  figure {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  figcaption {
+    @include panel-2();
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: $spacing-half $spacing;
+    transform: translate3d(0, 100%, 0);
+    transition: transform 200ms ease-out;
+  }
+
+  figure:hover figcaption {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &--body {
+    @include panel-1();
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $spacing;
+    padding: $spacing;
+  }
+
+  &--images {
+    flex-basis: 100%;
+
+    .Loader {
+      padding-top: 100%;
+    }
+  }
+
+  &--details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    > * {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+  }
+
+  &--description > *:first-child {
+    margin-top: 0;
+  }
+
+  &--tracklist {
+    h2 {
+      margin-bottom: $spacing-half;
+    }
+
+    ol {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      counter-reset: tracklist;
+    }
+
+    li {
+      $number-size: 30px;
+
+      display: flex;
+      flex-flow: row wrap;
+      position: relative;
+      align-items: center;
+      padding: $spacing-half $spacing-half $spacing-half ($number-size + $spacing-half);
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        min-width: $number-size;
+        font-size: 12px;
+        text-align: right;
+        counter-increment: tracklist;
+        content: counter(tracklist);
+        transform: translate3d(0, -50%, 0);
+      }
+
+      &:nth-child(odd) {
+        @include panel-1();
+      }
+
+      &:nth-child(even) {
+        @include panel-2();
+      }
+    }
+
+    &--title {
+      flex-grow: 1;
+      margin-right: $spacing;
+    }
+
+    &--genre {
+      font-size: 10px;
+      color: rgba($text-color, 0.5);
+      margin-right: $spacing;
+      padding: 2px 4px;
+      border: rgba($text-color, 0.2) 1px solid;
+      border-radius: $radius;
+    }
+
+    &--length {
+      font-size: 14px;
+    }
+  }
+
+  &--platformList {
+    list-style: none;
+    padding: 0;
+  }
+
+  &--copyright {
+    align-self: flex-end;
+    font-size: 14px;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @include screen-below(640px) {
+    &--tracklist--genre {
+      @include hide-visually();
+    }
+  }
+
+  @include screen-below($screen-xxs-max) {
+    &--images::after {
+      @include bg-2();
+
+      display: block;
+      height: 1px;
+      content: "";
+      margin-top: $spacing;
+      margin-bottom: $spacing;
+    }
+  }
+
+  @include screen-above(335px) {
+    &--buyList {
+      flex-basis: 50%;
+      padding-right: $spacing-half;
+    }
+
+    &--streamList {
+      flex-basis: 50%;
+      padding-left: $spacing-half;
+    }
+  }
+
+  @include screen-above($screen-xs-min) {
+    &--images {
+      flex-basis: 35%;
+    }
+
+    &--details {
+      flex-basis: 65%;
+      padding-left: $spacing;
+    }
+
+    &--copyright {
+      text-align: right;
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    &--images {
+      flex-basis: 40%;
+    }
+
+    &--details {
+      flex-basis: 60%;
+    }
+  }
+
+  @include screen-above($screen-md-min) {
+    &--description,
+    &--tracklist {
+      font-size: 18px;
+    }
+
+    &--tracklist--genre {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
+}

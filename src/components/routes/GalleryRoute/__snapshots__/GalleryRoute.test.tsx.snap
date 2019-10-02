@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[routes] <GalleryRoute /> matches snapshot 1`] = `
+<article
+  class="Gallery"
+>
+  <header
+    class="PageHeader"
+  >
+    <h1 />
+  </header>
+  <div
+    class="Gallery--description"
+  >
+    <p />
+  </div>
+  <section
+    class="Gallery--images"
+  >
+    <div
+      class="ImageGallery"
+    >
+      <figure
+        class="Image Gallery--image isLoading"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="Image--wrapper"
+        >
+          <img
+            alt=" - 1"
+            src="1"
+          />
+          <span
+            class="Loader"
+          >
+            <div
+              class="Loader--animation"
+            >
+              <span />
+              <span />
+              <span />
+            </div>
+          </span>
+        </div>
+      </figure>
+      <figure
+        class="Image Gallery--image isLoading"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="Image--wrapper"
+        >
+          <img
+            alt=" - 2"
+            src="2"
+          />
+          <span
+            class="Loader"
+          >
+            <div
+              class="Loader--animation"
+            >
+              <span />
+              <span />
+              <span />
+            </div>
+          </span>
+        </div>
+      </figure>
+    </div>
+  </section>
+</article>
+`;

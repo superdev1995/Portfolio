@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <Carousel /> when there are several children matches snapshot 1`] = `
+<div
+  class="Carousel"
+>
+  <div
+    class="Carousel--slides"
+    style="transform: translate3d(-200%, 0, 0);"
+  >
+    <div
+      class="Slide"
+    />
+    <div
+      class="Slide"
+    />
+    <div
+      class="Slide"
+    />
+  </div>
+  <div
+    class="Carousel--pagination"
+  >
+    <button
+      class="Button Carousel--pagination--page"
+      type="button"
+    >
+      <span
+        class="Button--content"
+      >
+        <span>
+          1
+        </span>
+      </span>
+    </button>
+    <button
+      class="Button Carousel--pagination--page"
+      type="button"
+    >
+      <span
+        class="Button--content"
+      >
+        <span>
+          2
+        </span>
+      </span>
+    </button>
+    <button
+      class="Button Carousel--pagination--page isSelected"
+      type="button"
+    >
+      <span
+        class="Button--content"
+      >
+        <span>
+          3
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`[presentation] <Carousel /> when there's only one child matches snapshot 1`] = `
+<div
+  class="Carousel"
+>
+  <div
+    class="Carousel--slides"
+    style="transform:translate3d(-0%, 0, 0)"
+  >
+    <div
+      class="Slide"
+    />
+  </div>
+</div>
+`;

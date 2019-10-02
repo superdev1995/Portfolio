@@ -1,0 +1,213 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.AppearanceListing {
+  flex-basis: 100%;
+  padding: $spacing-half;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  a {
+    @include panel-2();
+
+    display: flex;
+    flex-flow: row-reverse wrap;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .Loader {
+      padding-top: 141.5%;
+    }
+
+    &.isRendered {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--header::after {
+    @include bg-2();
+
+    display: block;
+    height: 1px;
+    content: "";
+    margin-bottom: $spacing;
+  }
+
+  &--details {
+    position: relative;
+    flex-grow: 1;
+    padding: $spacing;
+  }
+
+  &--status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: $spacing-half $spacing;
+    border: $text-color 2px dashed;
+    border-radius: 10px;
+    transform: rotate(-20deg) translate3d(-50%, -50%, 0);
+  }
+
+  &--price {
+    @include panel-1();
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    padding: $spacing-half $spacing-half $spacing-half ($spacing / 4);
+
+    &::before {
+      @include panel-1();
+      @include angle-before();
+
+      width: $spacing-double;
+    }
+  }
+
+  &.isCondensed {
+    .AppearanceListing--header::after {
+      display: none;
+    }
+  }
+
+  &.isRendered.isFinished {
+    opacity: 0.5;
+  }
+
+  &.isRendered:hover {
+    opacity: 1;
+  }
+
+  @include screen-below($screen-sm-max) {
+    &--details {
+      padding-bottom: ($spacing * 3);
+    }
+  }
+
+  @include screen-below($screen-xxs-max) {
+    a {
+      flex-direction: column-reverse;
+    }
+
+    &--details,
+    &--image {
+      flex-basis: 100%;
+    }
+  }
+
+  @include screen-above($screen-xs-min) {
+    &--details {
+      flex-basis: 60%;
+    }
+
+    &--image {
+      flex-basis: 40%;
+    }
+  }
+
+  @include screen-above(600px) {
+    &--details {
+      flex-basis: 70%;
+    }
+
+    &--image {
+      flex-basis: 30%;
+    }
+
+    &--price {
+      font-size: 30px;
+      padding: $spacing $spacing $spacing $spacing-half;
+
+      &::before {
+        width: ($spacing * 3);
+      }
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    &--details {
+      flex-basis: 60%;
+    }
+
+    &--image {
+      flex-basis: 40%;
+    }
+  }
+
+  @include screen-above(840px) {
+    &--details {
+      flex-basis: 65%;
+    }
+
+    &--image {
+      flex-basis: 35%;
+    }
+  }
+
+  @include screen-above($screen-lg-min) {
+    flex-basis: 50%;
+  }
+
+  @include screen-above(1300px) {
+    &.isCondensed {
+      .AppearanceListing--image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250%;
+        opacity: 0.2;
+        transform: translate3d(-50%, -50%, 0);
+        transition: width 200ms ease-out, opacity 200ms ease-out;
+      }
+
+      .AppearanceListing--details {
+        position: relative;
+        z-index: 1;
+      }
+
+      a:hover .AppearanceListing--image {
+        width: 270%;
+        opacity: 0.25;
+      }
+    }
+  }
+
+  @include screen-between(1300px, 1500px) {
+    &.isCondensed .AppearanceListing--details {
+      font-size: 14px;
+    }
+  }
+
+  @include screen-between($screen-lg-min, 1678px) {
+    &--price {
+      font-size: 24px;
+      padding: $spacing-half $spacing-half $spacing-half ($spacing / 4);
+
+      &::before {
+        width: $spacing-double;
+      }
+    }
+  }
+
+  @include screen-above(1470px) {
+    &--details {
+      flex-basis: 75%;
+    }
+
+    &--image {
+      flex-basis: 25%;
+    }
+  }
+}

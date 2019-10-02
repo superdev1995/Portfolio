@@ -1,0 +1,41 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Carousel {
+  overflow: hidden;
+
+  &--slides {
+    line-height: 0;
+    white-space: nowrap;
+    transform: translate3d(0, 0, 0);
+    transition: transform 200ms ease-out;
+
+    > * {
+      display: inline-block;
+      line-height: normal;
+    }
+  }
+
+  &--pagination {
+    line-height: 0;
+    text-align: center;
+    padding: $spacing-half 0;
+
+    &--page {
+      $size: 24px;
+
+      width: $size;
+      height: $size;
+      margin: 0 ($spacing / 5);
+      border: $text-color 1px solid;
+      border-radius: 100%;
+
+      span {
+        @include hide-visually();
+      }
+
+      &.isSelected {
+        background: $text-color;
+      }
+    }
+  }
+}

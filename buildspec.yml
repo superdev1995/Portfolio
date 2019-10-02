@@ -1,0 +1,33 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - "npm install -g yarn"
+  pre_build:
+    commands:
+      - "yarn install --force"
+  build:
+    commands:
+      - "yarn typecheck"
+      - "yarn lint"
+      - "yarn test --coverage"
+      - "yarn build"
+  post_build:
+    commands:
+artifacts:
+  files:
+    - dist/**/*
+    - scripts/**/*
+    - static/**/*
+    - appspec.yml
+    - next.config.js
+    - next.routes.js
+    - next.server.js
+    - start.config.json
+    - package.json
+    - yarn.lock
+cache:
+  paths:
+    - node_modules/**/*

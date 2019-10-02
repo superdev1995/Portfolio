@@ -1,0 +1,33 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Button.isStyled {
+  @include panel-1();
+
+  display: inline-block;
+  position: relative;
+  padding: $spacing-half $spacing;
+  border: $text-color 1px solid;
+  border-radius: $radius;
+
+  &.isLoading .Button--content {
+    opacity: 0;
+  }
+
+  .Loader {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    svg {
+      margin: 0 auto;
+    }
+  }
+
+  &:hover {
+    @include panel-2();
+  }
+}

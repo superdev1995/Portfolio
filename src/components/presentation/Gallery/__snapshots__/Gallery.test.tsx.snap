@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <Gallery /> when there are images defined matches snapshot 1`] = `
+<article
+  class="Gallery"
+>
+  <header
+    class="PageHeader"
+  >
+    <h1>
+      Title
+    </h1>
+  </header>
+  <div
+    class="Gallery--description"
+  >
+    <p>
+      Description
+    </p>
+  </div>
+  <section
+    class="Gallery--images"
+  >
+    <div
+      class="ImageGallery"
+    >
+      <figure
+        class="Image Gallery--image isLoading"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="Image--wrapper"
+        >
+          <img
+            alt="Title - 1"
+            src="Image 1"
+          />
+          <span
+            class="Loader"
+          >
+            <div
+              class="Loader--animation"
+            >
+              <span />
+              <span />
+              <span />
+            </div>
+          </span>
+        </div>
+      </figure>
+      <figure
+        class="Image Gallery--image isLoading"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="Image--wrapper"
+        >
+          <img
+            alt="Title - 2"
+            src="Image 2"
+          />
+          <span
+            class="Loader"
+          >
+            <div
+              class="Loader--animation"
+            >
+              <span />
+              <span />
+              <span />
+            </div>
+          </span>
+        </div>
+      </figure>
+      <figure
+        class="Image Gallery--image isLoading"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="Image--wrapper"
+        >
+          <img
+            alt="Title - 3"
+            src="Image 3"
+          />
+          <span
+            class="Loader"
+          >
+            <div
+              class="Loader--animation"
+            >
+              <span />
+              <span />
+              <span />
+            </div>
+          </span>
+        </div>
+      </figure>
+    </div>
+  </section>
+</article>
+`;
+
+exports[`[presentation] <Gallery /> when there are no images matches snapshot 1`] = `
+<article
+  class="Gallery"
+>
+  <header
+    class="PageHeader"
+  >
+    <h1>
+      Title
+    </h1>
+  </header>
+  <div
+    class="Gallery--description"
+  >
+    <p>
+      Description
+    </p>
+  </div>
+</article>
+`;

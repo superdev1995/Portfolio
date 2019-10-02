@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <ActListing /> matches snapshot 1`] = `
+<article
+  class="ActListing isRendered"
+>
+  <span
+    class="ActListing--link"
+  >
+    <div
+      class="ActListing--details"
+    >
+      <h3>
+        Name
+      </h3>
+      <section
+        class="ActListing--meta"
+      >
+        <div
+          class="Meta ActListing--genre"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"
+            />
+          </svg>
+           
+          <span
+            class="Meta--label"
+          >
+            Genre:
+          </span>
+           
+          <span
+            class="Meta--value"
+          >
+            Genre
+          </span>
+        </div>
+        <div
+          class="Meta ActListing--location"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+            />
+          </svg>
+           
+          <span
+            class="Meta--label"
+          >
+            Location:
+          </span>
+           
+          <span
+            class="Meta--value"
+          />
+        </div>
+      </section>
+    </div>
+    <figure
+      class="Image ActListing--image isLoading"
+    >
+      <div
+        class="Image--wrapper"
+      >
+        <img
+          alt="Name"
+          src="Image URL"
+        />
+        <span
+          class="Loader"
+        >
+          <div
+            class="Loader--animation"
+          >
+            <span />
+            <span />
+            <span />
+          </div>
+        </span>
+      </div>
+    </figure>
+  </span>
+</article>
+`;

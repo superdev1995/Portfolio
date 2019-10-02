@@ -1,0 +1,5 @@
+@import "../../../scss/mixins";
+
+.Meta--label {
+  @include hide-visually();
+}

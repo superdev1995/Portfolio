@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[routes] <GalleriesRoute /> when all data is in the store matches snapshot 1`] = `
+<article
+  class="GalleriesRoute"
+>
+  <header
+    class="PageHeader"
+  >
+    <h1>
+      Galleries
+    </h1>
+  </header>
+  <section
+    class="GalleriesRoute--listings"
+  >
+    <article
+      class="GalleryListing isRendered"
+    >
+      <a
+        href="/galleries/test-1"
+      >
+        <header
+          class="GalleryListing--header"
+        >
+          <h2 />
+        </header>
+      </a>
+    </article>
+    <article
+      class="GalleryListing isRendered"
+    >
+      <a
+        href="/galleries/test-2"
+      >
+        <header
+          class="GalleryListing--header"
+        >
+          <h2 />
+        </header>
+      </a>
+    </article>
+  </section>
+</article>
+`;

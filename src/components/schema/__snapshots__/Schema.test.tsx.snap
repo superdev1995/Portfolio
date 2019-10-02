@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[schema] <Schema /> renders correctly 1`] = `null`;
+
+exports[`[schema] <Schema /> renders correctly when isPretty=true 1`] = `null`;

@@ -1,0 +1,261 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Navigation {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  font-size: 24px;
+  text-transform: lowercase;
+
+  &::before,
+  &::after,
+  ul::before,
+  ul::after,
+  li::before,
+  li::after,
+  button::before,
+  button::after {
+    background: $text-color;
+    display: block;
+    position: absolute;
+    content: "";
+    pointer-events: none;
+  }
+
+  &::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+
+  &::after {
+    @include logo-symbol();
+  }
+
+  button {
+    display: none;
+  }
+
+  ul {
+    flex-grow: 1;
+    text-align: center;
+    list-style: none;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    margin: 0;
+    cursor: default;
+
+    &::before,
+    &::after {
+      left: 50%;
+      width: 0;
+      height: 1px;
+      transition: width 200ms ease-in-out;
+    }
+  }
+
+  a {
+    display: block;
+    color: $text-color;
+    transform: scale3d(1, 1, 1);
+    transition: transform 200ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      transform: scale3d(1.3, 1.3, 1);
+    }
+  }
+
+  .isClientRendered & button {
+    flex-grow: 0;
+    position: relative;
+    padding: 0 $spacing-half 4px;
+  }
+
+  @include screen-below($screen-xs-max) {
+    $symbol-size: 24px;
+
+    margin-right: $symbol-size;
+    padding: 0 $spacing-half;
+
+    &::after {
+      top: 50%;
+      left: 100%;
+      width: $symbol-size;
+      height: $symbol-size;
+      transform: translate3d(0, -50%, 0);
+    }
+
+    a,
+    button {
+      padding-bottom: 4px;
+    }
+  }
+
+  @include screen-below($screen-xs-max) {
+    ul {
+      flex-direction: column;
+      position: fixed;
+      top: $banner-size-small + $spacing-double;
+      right: $spacing;
+      bottom: $spacing;
+      left: 0;
+      line-height: 0.9;
+      padding: $spacing;
+      background: rgba($panel-base-color, 0.8);
+      opacity: 0;
+      transform: translate3d(-120%, 0, 0);
+      transition: transform 200ms ease-out, opacity 200ms ease-out;
+      pointer-events: none;
+
+      &::before {
+        top: $spacing;
+        bottom: $spacing;
+        left: 50%;
+        width: 1px;
+      }
+    }
+
+    li {
+      &::before {
+        top: 14px;
+        transform: translate3d(-50%, 0, 0);
+      }
+
+      &.isSelected::before {
+        width: 100%;
+        height: 1px;
+      }
+    }
+
+    button {
+      display: block;
+
+      &::before,
+      &::after {
+        top: 16px;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        transform: translate3d(-50%, 0, 0) rotate(45deg);
+        transition: width 200ms ease-in-out;
+      }
+
+      &::after {
+        transform: translate3d(-50%, 0, 0) rotate(-45deg);
+      }
+    }
+
+    &.isOpen {
+      ul {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        pointer-events: auto;
+      }
+
+      button::before,
+      button::after {
+        width: $banner-size-small;
+      }
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    padding: $spacing;
+
+    &::before,
+    &::after,
+    ul::before,
+    ul::after {
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    &::before {
+      top: 0;
+      width: 1px;
+      height: 100%;
+    }
+
+    &::after {
+      $size: 36px;
+
+      top: 100%;
+      width: $size;
+      height: $size;
+    }
+
+    ul {
+      $line-size: 28px;
+
+      padding: 0 0 $spacing-double;
+
+      &::before,
+      &::after {
+        bottom: $spacing;
+        width: $line-size;
+        height: 1px;
+      }
+
+      &::after {
+        bottom: $spacing + $spacing-half;
+      }
+    }
+
+    li {
+      &::before {
+        top: 14px;
+        background: $text-color;
+        transform: translate3d(-50%, 0, 0);
+      }
+
+      &.isSelected::before {
+        width: $banner-size-medium - $spacing-double;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  @include screen-between($screen-sm-min, $screen-sm-max) {
+    font-size: 20px;
+  }
+
+  @include screen-above($screen-md-min) {
+    padding: $spacing-double $spacing;
+
+    li {
+      &::before {
+        top: 17px;
+      }
+
+      &.isSelected::before {
+        width: $banner-size - $spacing-double;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) and (max-height: 640px) {
+    padding: $spacing;
+  }
+
+  @media screen and (min-width: $screen-sm-min) and (max-height: 520px) {
+    ul {
+      padding: 0 !important;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

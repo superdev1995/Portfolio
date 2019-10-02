@@ -1,0 +1,20 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.ButtonBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background: $text-color;
+  }
+
+  .Button {
+    margin: 0 $spacing-half;
+  }
+}

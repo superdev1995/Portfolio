@@ -1,0 +1,67 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.NewsArticle {
+  &--image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .Loader {
+      padding-top: 31.25%;
+    }
+  }
+
+  &--body {
+    @include panel-1();
+
+    position: relative;
+    margin-bottom: $spacing;
+  }
+
+  &--meta {
+    font-size: 14px;
+    padding: $spacing $spacing 0;
+  }
+
+  &--content {
+    padding: 0 $spacing;
+    overflow: hidden;
+  }
+
+  &--content--text {
+    padding: $spacing 0;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &--action {
+    margin-top: $spacing;
+  }
+
+  @include screen-above($screen-sm-min) {
+    &--meta {
+      @include panel-2();
+
+      position: absolute;
+      padding: $spacing-half $spacing;
+      transform: translate3d(0, -100%, 0);
+
+      > * {
+        display: inline-block;
+
+        + * {
+          margin-left: $spacing;
+        }
+      }
+
+      &::before {
+        @include panel-2();
+        @include angle-after-bottom();
+
+        width: $spacing-double;
+      }
+    }
+  }
+}

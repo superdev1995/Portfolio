@@ -1,0 +1,202 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Appearance {
+  h2 {
+    @include line-before-after();
+  }
+
+  .Map {
+    height: 300px;
+  }
+
+  &--body {
+    @include panel-1();
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: $spacing;
+  }
+
+  &--status {
+    @include text-shadow();
+
+    $shadow-color: rgba($body-color, 0.3);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: $spacing-half $spacing;
+    border: $text-color 2px dashed;
+    border-radius: 10px;
+    transform: rotate(-20deg) translate3d(-50%, -50%, 0);
+    box-shadow:
+      $shadow-color -3px -3px 0,
+      $shadow-color 3px -3px 0,
+      $shadow-color 3px 3px 0,
+      $shadow-color -3px 3px 0,
+      inset $shadow-color -3px -3px 0,
+      inset $shadow-color 3px -3px 0,
+      inset $shadow-color 3px 3px 0,
+      inset $shadow-color -3px 3px 0;
+  }
+
+  &--image {
+    position: relative;
+    flex-basis: 100%;
+
+    .Loader {
+      padding-top: 141.5%;
+    }
+  }
+
+  &--details {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    padding: $spacing;
+
+    > * {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+  }
+
+  &--description *:first-child {
+    margin-top: 0;
+  }
+
+  &--acts--items,
+  &--tickets--items {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 (-$spacing-half);
+
+    > * {
+      flex-basis: 100%;
+    }
+  }
+
+  &--map h2,
+  &--images h2 {
+    @include hide-visually();
+  }
+
+  &--map {
+    flex-basis: 100%;
+  }
+
+  &--images {
+    flex-basis: 100%;
+    padding: 0 $spacing $spacing;
+
+    &--items {
+      display: flex;
+      flex-flow: row wrap;
+      margin: (-($spacing / 4));
+
+      > * {
+        flex-basis: 50%;
+        padding: ($spacing / 4);
+        cursor: pointer;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &.isCancelled {
+    .Appearance--date::after,
+    .Appearance--time::after {
+      @include bg-2();
+
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      content: "";
+      transform: rotate(-2deg);
+    }
+  }
+
+  @include screen-below($screen-xs-max) {
+    &--rsvp .Button {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @include screen-between(450px, $screen-xxs-max) {
+    &--tickets--items > * {
+      flex-basis: 50%;
+    }
+  }
+
+  @include screen-above($screen-xs-min) {
+    &--image {
+      flex-basis: 40%;
+      padding: $spacing 0 $spacing $spacing;
+    }
+
+    &--details {
+      flex-basis: 60%;
+    }
+
+    &--images--items > * {
+      flex-basis: 33.333333%;
+    }
+  }
+
+  @include screen-above(650px) {
+    &--images--items > * {
+      flex-basis: 25%;
+    }
+  }
+
+  @include screen-above($screen-md-min) {
+    &--image {
+      flex-basis: 30%;
+    }
+
+    &--details {
+      flex-basis: 70%;
+    }
+
+    &--acts--items > *,
+    &--tickets--items > * {
+      flex-basis: 50%;
+    }
+
+    &--description {
+      font-size: 20px;
+    }
+  }
+
+  @include screen-above($screen-lg-min) {
+    &--acts--items > *,
+    &--tickets--items > * {
+      flex-basis: 33.333333%;
+    }
+
+    &--images--items > * {
+      flex-basis: 20%;
+    }
+  }
+
+  @include screen-above(1550px) {
+    .Map {
+      height: 400px;
+    }
+
+    &--images--items > * {
+      flex-basis: 16.666666%;
+    }
+  }
+
+  @include screen-above(1700px) {
+    &--acts--items > *,
+    &--tickets--items > * {
+      flex-basis: 25%;
+    }
+  }
+}

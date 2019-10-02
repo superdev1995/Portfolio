@@ -1,0 +1,52 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Toast {
+  opacity: 1;
+  transition: opacity 200ms ease-out;
+
+  &--content {
+    @include panel-1();
+
+    display: inline-flex;
+    font-size: 14px;
+    margin-top: $spacing-half;
+    padding: $spacing;
+    border: $text-color 1px solid;
+    border-radius: $radius;
+  }
+
+  &--message {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+
+    button {
+      margin-left: $spacing;
+    }
+  }
+
+  &--closeButton {
+    margin: (-$spacing) (-$spacing) (-$spacing) 0;
+    padding: $spacing;
+  }
+
+  &.isHidden {
+    opacity: 0;
+  }
+
+  @include screen-below($screen-xs-max) {
+    &--content {
+      display: flex;
+    }
+
+    &--message {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: $spacing-half;
+      }
+    }
+  }
+}

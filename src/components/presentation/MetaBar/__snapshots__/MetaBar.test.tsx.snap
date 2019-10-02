@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <MetaBar /> when children are defined matches snapshot 1`] = `
+<div
+  class="MetaBar TestMetaBar"
+>
+  Child meta
+</div>
+`;

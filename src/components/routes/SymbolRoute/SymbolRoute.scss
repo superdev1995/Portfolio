@@ -1,0 +1,51 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.SymbolRoute {
+  h2 {
+    @include line-before-after();
+  }
+
+  section {
+    @include panel-1();
+
+    margin-bottom: $spacing;
+    padding: $spacing-half $spacing;
+    overflow: hidden;
+  }
+
+  &--symbol {
+    width: 80%;
+    margin: auto;
+
+    &::before {
+      @include bg-1();
+      @include logo-symbol();
+
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 100%;
+    }
+  }
+
+  &--photo {
+    @include square-image();
+  }
+
+  @include screen-above($screen-xs-min) {
+    &--symbol,
+    &--photo {
+      float: right;
+      width: 30%;
+      margin-left: $spacing;
+      margin-bottom: $spacing;
+    }
+  }
+
+  @include screen-above(1500px) {
+    &--symbol,
+    &--photo {
+      width: 20%;
+    }
+  }
+}

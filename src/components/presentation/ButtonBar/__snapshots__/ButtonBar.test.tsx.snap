@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <ButtonBar /> when there are children matches snapshot 1`] = `
+<div
+  class="ButtonBar"
+>
+  <div
+    class="Child"
+  />
+</div>
+`;

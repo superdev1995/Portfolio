@@ -1,0 +1,31 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.PageHeader {
+  @include panel-1();
+  @include flag-left();
+
+  display: flex;
+  align-items: center;
+  margin: 0 (0 - $spacing) $spacing 0;
+  padding-top: $spacing-half;
+  padding-right: $spacing;
+  padding-bottom: $spacing-half;
+  overflow: hidden;
+
+  &::before {
+    @include bg-2();
+    @include logo-symbol();
+
+    display: inline-block;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    content: "";
+    margin-right: $spacing-half;
+  }
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+  }
+}

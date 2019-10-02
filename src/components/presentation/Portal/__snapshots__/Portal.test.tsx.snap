@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[presentation] <Portal /> when mounting on the client matches snapshot 1`] = `
+<div
+  class="TestPortalComponent"
+/>
+`;
+
+exports[`[presentation] <Portal /> when mounting on the server matches snapshot 1`] = `
+<div
+  class="Portal--inPlace"
+>
+  <div
+    class="TestPortalComponent"
+  />
+</div>
+`;

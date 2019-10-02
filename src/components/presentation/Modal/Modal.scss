@@ -1,0 +1,44 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.Modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: none;
+  background: rgba(#000, 0.8);
+  overflow: auto;
+  transition: opacity 200ms ease-out;
+  z-index: $modal-index;
+
+  button {
+    color: #fff;
+  }
+
+  &--overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &--closeButton {
+    @include text-shadow();
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    padding: $spacing;
+  }
+
+  .isClientRendered & {
+    opacity: 0;
+
+    &.isVisible {
+      opacity: 1;
+    }
+  }
+}

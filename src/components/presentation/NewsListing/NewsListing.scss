@@ -1,0 +1,95 @@
+@import "../../../scss/variables", "../../../scss/mixins";
+
+.NewsListing {
+  padding-bottom: $spacing;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  header {
+    @include hide-visually();
+  }
+
+  a {
+    display: block;
+    position: relative;
+    color: $text-color;
+    opacity: 0.8;
+    transition: opacity 200ms ease-out;
+    overflow: hidden;
+
+    &:hover {
+      opacity: 1;
+
+      p {
+        transform: translate3d(0, -100%, 0);
+      }
+    }
+  }
+
+  &--image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    .Loader {
+      padding-top: 31.25%;
+    }
+  }
+
+  @include screen-below($screen-xs-max) {
+    p {
+      @include hide-visually();
+    }
+  }
+
+  @include screen-above($screen-sm-min) {
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: $spacing-double;
+
+      &::before {
+        @include panel-2();
+        @include angle-after-top();
+
+        width: $spacing-double;
+      }
+    }
+
+    p {
+      @include panel-2();
+
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin: 0 0 0 $spacing-double;
+      padding: $spacing-half $spacing;
+      transform: translate3d(0, 0, 0);
+      transition: transform 200ms ease-out;
+      z-index: 1;
+
+      span {
+        display: inline-block;
+        max-height: 83px;
+        overflow: hidden;
+      }
+
+      &::before {
+        @include panel-2();
+        @include angle-before();
+
+        width: $spacing-double;
+      }
+    }
+  }
+
+  @include screen-above($screen-md-min) {
+    h2,
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
